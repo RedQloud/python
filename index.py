@@ -28,11 +28,7 @@ print('''
   <body>
     <h1><a href="index.py">WEB</a></h1>
     <ol>
-      <li><a href="index.py?id=HTML">HTML</a></li>
-      <li><a href="index.py?id=CSS">CSS</a></li>
-      <li><a href="index.py?id=JavaScript">JavaScript</a></li>
-      <li><a href="index.py?id=Python">Python</a></li>
-      {listStr}
+        {listStr}
     </ol>
     <h2>{title}</h2>
     <p>{desc}</p>
