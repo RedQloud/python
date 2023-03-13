@@ -5,18 +5,18 @@ print()
 import cgi
 import cgi, os
 
-files = os.listdir('data')
-listStr = ''
-for item in files:
-    listStr = listStr + '<li><a href="index.py?id={name}">{name}</a></li>'.format(name=item)
+# files = os.listdir('data')
+# listStr = ''
+# for item in files:
+#     listStr = listStr + '<li><a href="index.py?id={name}">{name}</a></li>'.format(name=item)
 
-form = cgi.FieldStorage()
-if 'id' in form:
-    pageId = form["id"].value
-    description = open('data/'+pageId, 'r').read()
-else:
-    pageId = 'Welcome'
-    description = 'Hello, web'
+# form = cgi.FieldStorage()
+# if 'id' in form:
+#     pageId = form["id"].value
+#     description = open('data/'+pageId, 'r').read()
+# else:
+#     pageId = 'Welcome'
+#     description = 'Hello, web'
 print('''<!doctype html>
 <html>
 <head>
